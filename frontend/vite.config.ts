@@ -20,6 +20,9 @@ export default defineConfig({
     optimizeDeps: {
       exclude: ["@zama-fhe/relayer-sdk"],
     },
+    ssr: {
+      external: ["@zama-fhe/relayer-sdk"],
+    },
     build: {
       target: "esnext",
     },
